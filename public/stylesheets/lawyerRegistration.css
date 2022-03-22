@@ -2,12 +2,16 @@ body {
     background: url('/images/lawyerregistrationbg.jpg');
  
  }
-/* 
- .btn{
+
+ .btn-success{
     font-size: 1.6rem;
  }
-  */
-  
+
+ .btn-outline-success{
+   font-size: 1.6rem;
+}
+ 
+
  *[role="form"] {
     max-width: 530px;
     padding: 15px;
