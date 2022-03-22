@@ -131,10 +131,10 @@ body{
    .quote{
     position:absolute ;
     left: 50%;
-    top: 32%;
+    top: 36%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 50px;
+    font-size: 33px;
     /* text-align: center; */
     background-color: rgba(0,0,0,0.4);
    }

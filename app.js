@@ -3,6 +3,7 @@ const res = require('express/lib/response');
 const mongoose = require('mongoose');
 const path = require('path')
 const ejsMate = require('ejs-mate')
+const Lawyer = require('./models/lawyers');
 
 main().catch(err => console.log(err));
 
