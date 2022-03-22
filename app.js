@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path')
 const ejsMate = require('ejs-mate')
 const Lawyer = require('./models/lawyers');
+let bodyParser = require('body-parser')
 
 main().catch(err => console.log(err));
 
@@ -17,6 +18,7 @@ app.engine('ejs', ejsMate)
 app.set('view engine' , 'ejs');
 app.set('views' , path.join(__dirname , 'views'))
 app.use(express.static(__dirname + "/public"));
+app.use(express.urlencoded({extended : true}))
 
 app.get('/' , (req , res) => {
     res.render('home')
@@ -76,6 +78,13 @@ app.get('/wantalawyer' , (req , res) => {
 app.get('/lawyerRegistrationForm' , (req , res) => {
   res.render('lawyerRegistrationForm')
 })
+
+app.post('/lawyerRegistrationForm' , async(req , res) => {
+  const lawyer = new Lawyer(req.body.lawyer)
+  await lawyer.save()
+  res.redirect('/')
+})
+
 
 app.get('/loginSignup' , (req , res) => {
   res.render('loginSignup')

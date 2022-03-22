@@ -3,12 +3,12 @@ const Schema = mongoose.Schema;
 
 const LawyerSchema = new Schema({
     FirstName : String ,
-    LasstName : String ,
+    LastName : String ,
     Email : String,
     Image : String , 
     Address : String ,
     State : String , 
-    PinCode : Number ,
+    Pincode : Number ,
     PhoneNumber : Number , 
     Experience : String , 
     Rating : Number,
