@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
 }
-.one{
+.center{
     text-align: center;
+}
+
+img{
+    margin-bottom: 24px;
 }
 
 .imgsize{
