@@ -12,6 +12,14 @@ h5 {
     margin-top: -6px;
 }
 
+.form-inline{
+    flex-flow: nowrap;
+}
+
+#center{
+    justify-content: center;
+}
+
 #heading {
     display: flexbox;
     /*color: azure; */
@@ -46,7 +54,6 @@ ul {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
 }
 
