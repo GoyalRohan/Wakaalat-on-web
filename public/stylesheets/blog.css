@@ -5,14 +5,24 @@
 	box-sizing: border-box;
 	
 }
-.header img{
+
+
+#img-center{
 	height: 100%;
 	width: 100%;
 	background-position: center;
 }
+
+
 /* .2{
 	background-color: #eee;
 } */
+
+body{
+	background-image: url("/images/blog/blog1.jpg");
+	background-size: cover;
+}
+
 .blog{
 	width: 100%;
 	height: 100vh;
@@ -23,7 +33,7 @@
 	margin: 10% 0;
 }
 .blog-post{
-	width: 80%;
+	width: 90%;
 	height: 100%;
 	max-width: 98rem;
 	padding: 5rem;
