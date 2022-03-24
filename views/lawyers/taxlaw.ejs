@@ -168,6 +168,37 @@
 
                     <a href="#" class="btn">Contact</a>
                 </div>
+
+                <% for(let lawyer of lawyers) {%>
+                    <div class="card">
+                        <img class="card-img"
+                            src="https://wallpapertag.com/wallpaper/full/f/d/5/735209-lawyer-wallpaper-hd-mobile-2048x1371-for-macbook.jpg"
+                            alt="Card Background">
+                        <img class="profile-img" src="<%=lawyer.Image%>" alt="<%=lawyer.FirstName%>">
+                        <h1>Advocate <%=lawyer.FirstName%>
+                        </h1>
+                        <p class="exp"><i>Experience: <%=lawyer.Experience%>Years</i></p>
+                        <p class="about">
+                            Advocate <%=lawyer.FirstName%>
+                                <%=lawyer.LastName%> is being associated with one of the top Senior Advocates of the
+                                    Supreme Court of India and later with a
+                                    leading law firm of New Delhi, he worked extensively in litigation and corporate
+                                    advisory
+                                    field handling clients in the Oil & Gas, IT, Banking and Manufacturing industry.
+                        </p>
+
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <% } %>
+
             </div>
         </div>
     </section>

@@ -12,6 +12,7 @@ const LawyerSchema = new Schema({
     PhoneNumber : Number , 
     Experience : String , 
     Rating : Number,
+    Resume : String ,
     Description : String ,
     Specialization : String
 });

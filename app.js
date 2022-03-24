@@ -37,37 +37,45 @@ app.get('/findalawyer' , (req , res) => {
 })
 
 
-app.get('/lawyers/banklaw' , (req , res) => {
-  res.render('lawyers/banklaw')
+app.get('/lawyers/banklaw' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Bank Lawyer"})
+  res.render('lawyers/banklaw' , { lawyers })
 })
 
 
-app.get('/lawyers/CriminalDefense' , (req , res) => {
-  res.render('lawyers/CriminalDefense')
+app.get('/lawyers/CriminalDefense' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "CriminalDefense Lawyer"})
+  res.render('lawyers/CriminalDefense' , {lawyers})
 })
 
-app.get('/lawyers/estate' , (req , res) => {
-  res.render('lawyers/estate')
+app.get('/lawyers/estate' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Estate Lawyer"})
+  res.render('lawyers/estate' , {lawyers})
 })
 
-app.get('/lawyers/family' , (req , res) => {
-  res.render('lawyers/family')
+app.get('/lawyers/family' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Family Lawyer"})
+  res.render('lawyers/family' , {lawyers})
 })
 
-app.get('/lawyers/iplaw' , (req , res) => {
-  res.render('lawyers/iplaw')
+app.get('/lawyers/iplaw' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Iplaw Lawyer"})
+  res.render('lawyers/iplaw' , {lawyers})
 })
 
-app.get('/lawyers/laborlaw' , (req , res) => {
-  res.render('lawyers/laborlaw')
+app.get('/lawyers/laborlaw' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Labourlaw Lawyer"})
+  res.render('lawyers/laborlaw' , {lawyers})
 })
 
-app.get('/lawyers/pilaw' , (req , res) => {
-  res.render('lawyers/pilaw')
+app.get('/lawyers/pilaw' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Pilaw Lawyer"})
+  res.render('lawyers/pilaw' , {lawyers})
 })
 
-app.get('/lawyers/taxlaw' , (req , res) => {
-  res.render('lawyers/taxlaw')
+app.get('/lawyers/taxlaw' , async(req , res) => {
+  const lawyers = await Lawyer.find({"Specialization" : "Taxlaw Lawyer"})
+  res.render('lawyers/taxlaw' , {lawyers})
 })
 
 

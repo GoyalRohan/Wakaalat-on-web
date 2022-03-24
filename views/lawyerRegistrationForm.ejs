@@ -7,7 +7,8 @@
 <% layout('layouts/Boilerplate') %>
 
     <div class="container">
-        <form action="/lawyerRegistrationForm" class="form-horizontal" role="form" name="regform"  method="POST" onsubmit="validateForm()">
+        <form action="/lawyerRegistrationForm" class="form-horizontal" role="form" name="regform" method="POST"
+            onsubmit="validateForm()">
             <h2>Lawyer Registration</h2>
             <div class="form-group">
                 <label for="firstName" class="col-sm-3 control-label">First Name<span class="reqfield">*</span></label>
@@ -121,17 +122,18 @@
 
 
             <div class="form-group">
-                <label class="col-md-4 control-label" for="picbutton">Upload Photo<span
-                        class="reqfield">*</span></label>
-                <div class="col-md-4">
-                    <input name="picbutton" class="input-file" id="picbutton" type="file">
+                <label for="image" class="col-sm-3 control-label">Image Url<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="image" placeholder="Enter Image Url" name="lawyer[Image]" class="form-control"
+                        autofocus>
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label" for="filebutton">Upload CV<span class="reqfield">*</span></label>
-                <div class="col-md-4">
-                    <input name="filebutton" class="input-file" id="filebutton" type="file">
+                <label for="resume" class="col-sm-3 control-label">Resume Url<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="resume" placeholder="Enter Resume Url" name="lawyer[Resume]" class="form-control"
+                        autofocus>
                 </div>
             </div>
 
