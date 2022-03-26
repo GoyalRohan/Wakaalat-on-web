@@ -36,6 +36,9 @@ app.get('/findalawyer' , (req , res) => {
   res.render('findalawyer')
 })
 
+app.get('/fundraising' , (req , res) => {
+  res.render('fundraising')
+})
 
 app.get('/lawyers/banklaw' , async(req , res) => {
   const lawyers = await Lawyer.find({"Specialization" : "Bank Lawyer"})
@@ -82,6 +85,11 @@ app.get('/lawyers/taxlaw' , async(req , res) => {
 app.get('/wantalawyer' , (req , res) => {
   res.render('wantalawyer')
 })
+
+app.get('/contact' , (req , res) =>{
+  res.render('contact')
+})
+
 
 app.get('/lawyerRegistrationForm' , (req , res) => {
   res.render('lawyerRegistrationForm')
